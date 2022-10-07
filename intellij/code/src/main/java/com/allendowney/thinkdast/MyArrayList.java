@@ -117,9 +117,8 @@ public class MyArrayList<T> implements List<T> {
 
     @Override
     public int indexOf(Object target) {
-        for (int i = 0; i < size; i ++) {
-            if (Objects.equals(array[i]
-                , target)) {
+        for (int i = 0; i < size; i++) {
+            if (Objects.equals(array[i], target)) {
                 return i;
             }
         }
