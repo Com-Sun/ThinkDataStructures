@@ -175,3 +175,28 @@ public class MyArrayList<T> implements List<T> {
 
 }
 ```
+
+## 3 - ArrayList 클래스
+
+### 실습 - MyLinkedList 클래스 구현하기
+
+#### indexOf
+
+```java
+public class MyLinkedList<E> implements List<E> {
+    
+    @Override
+    public int indexOf(Object target) {
+        Node node = head;
+
+        for (int i = 0; i < size; i++) {
+            if (target.equals(node.data)) {
+                return i;
+            }
+            node = node.next;
+        }
+        return -1;
+    }
+}
+```
+
